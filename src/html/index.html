@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{> _head }}
+</head>
+
+<body>
+{{> _header }}
+
+<div class="slideshow">
+
+</div>
+
+<div class="container">
+    <section>
+        <div class="section-intro col-md-10 col-md-offset-1">
+            <a href="#" class="h1 section-heading" title="View all projects">Recent Projects</a>
+            <p>My name is Pavel Kondratenko. I'm a professional 3d artist. Mainly I do modeling, texturing and shader
+                creation for films, commercials and games.</p>
+        </div>
+
+        <div class="row">
+            {{> _project_item}}
+            {{> _project_item}}
+            {{> _project_item}}
+            {{> _project_item}}
+
+            {{> _project_item}}
+            {{> _project_item}}
+            {{> _project_item}}
+            {{> _project_item}}
+
+        </div>
+
+    </section>
+
+    <section>
+        <div class="section-intro col-md-10 col-md-offset-1">
+            <a href="#" class="h1 section-heading">Speed Sculpting</a>
+            <p>My name is Pavel Kondratenko. I'm a professional 3d artist. Mainly I do modeling, texturing and shader
+                creation for films, commercials and games.</p>
+        </div>
+
+        <div class="row">
+            {{> _project_item}}
+            {{> _project_item}}
+            {{> _project_item}}
+            {{> _project_item}}
+        </div>
+
+    </section>
+</div>
+{{> _footer}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.0/holder.js"></script>
+</body>
+</html>

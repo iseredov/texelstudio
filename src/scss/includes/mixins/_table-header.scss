@@ -1,0 +1,32 @@
+@mixin table-header-variant($state, $color) {
+
+  .table-header-#{$state}{
+    > thead > tr {
+      > th,
+      > td {
+        border-color: $color;
+      }
+    }
+
+    &.table-bordered {
+      border-top-color: $color;
+      > thead > tr {
+        > th,
+        > td {
+          border-color: #fff;
+          background-color: $color;
+          color: #fff;
+          border-bottom:1px solid $color;
+          &:first-child{
+            border-left-color: $color;
+          }
+          &:last-child{
+            border-right-color: $color;
+          }
+        }
+      }
+    }
+
+  }
+
+}

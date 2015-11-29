@@ -1,0 +1,44 @@
+.site-header {
+  background: #191919;
+  color: #fff;
+  min-height: 78px;
+}
+
+.site {
+  &-name {
+    margin-top: 15px;
+    line-height: 1;
+    &-main {
+      font-size: 30px;
+    }
+    &-sub {
+      margin-top: 5px;
+      font-size: 16px;
+    }
+  }
+}
+
+.main-nav{
+  font-size: 18px;
+  padding:0;
+  list-style: none;
+  @media (min-width: $screen-md-min) {
+    float: right;
+  }
+
+  margin-top: 30px;
+  >li{
+    display: inline-block;
+    margin-right: 30px;
+    &:last-child{
+      margin-right: 0;
+    }
+    a{
+      color: #bebebe;
+      &:hover{
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
+}

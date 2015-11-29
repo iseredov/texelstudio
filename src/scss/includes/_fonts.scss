@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: /*local('Open Sans Light'), local('OpenSans-Light'), url('#{$font-path}opensanslight.woff2') format('woff2'), */url('#{$font-path}opensanslight.woff') format('woff'), url('#{$font-path}opensanslight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans'), local('OpenSans'), url('#{$font-path}opensans.woff2') format('woff2'), url('#{$font-path}opensans.woff') format('woff'), url('#{$font-path}opensans.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url('#{$font-path}opensansitalic.woff2') format('woff2'), url('#{$font-path}opensansitalic.woff') format('woff'), url('#{$font-path}opensansitalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans Medium'), local('OpenSans-Medium'), url('#{$font-path}opensansmedium.woff2') format('woff2'), url('#{$font-path}opensansmedium.woff') format('woff'), url('#{$font-path}opensansmedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans Medium Italic'), local('OpenSans-MediumItalic'), url('#{$font-path}opensansmediumitalic.woff2') format('woff2'), url('#{$font-path}opensansmediumitalic.woff') format('woff'), url('#{$font-path}opensansmediumitalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url('#{$font-path}opensansbold.woff2') format('woff2'), url('#{$font-path}opensansbold.woff') format('woff'), url('#{$font-path}opensansbold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url('#{$font-path}opensansbolditalic.woff2') format('woff2'), url('#{$font-path}opensansbolditalic.woff') format('woff'), url('#{$font-path}opensansbolditalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}

@@ -1,0 +1,51 @@
+// Pagination
+
+@mixin pagination-size($padding-vertical, $padding-horizontal, $font-size, $line-height) {
+  > li {
+    > a,
+    > span {
+      padding: $padding-vertical $padding-horizontal;
+      font-size: $font-size;
+      line-height: $line-height;
+      height: $font-size*$line-height+$padding-vertical*2+2;
+      min-width: $font-size*$line-height+$padding-vertical*2+2;
+      .material-icons{
+        top: 50%;
+        font-size: $font-size*1.5;
+        margin-top: -($font-size*1.5/2);
+      }
+    }
+  }
+}
+
+@mixin pagination-rounded($border-radius) {
+  > li {
+    &:first-child {
+      > a,
+      > span {
+        @include border-left-radius($border-radius);
+      }
+    }
+    &:last-child {
+      > a,
+      > span {
+        @include border-right-radius($border-radius);
+      }
+    }
+  }
+}
+
+@mixin pagination-circle($padding, $font-size, $line-height) {
+  > li {
+    > a,
+    > span {
+        text-align: center;
+        padding: 0;
+        margin: 0 5px 0 0;
+        line-height: $font-size*$line-height+$padding*2;
+        width: ($font-size*$line-height+$padding*2+2);
+        height: ($font-size*$line-height+$padding*2+2);
+        border-radius: 50%;
+    }
+  }
+}
