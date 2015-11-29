@@ -9,6 +9,13 @@
   &-name {
     margin-top: 15px;
     line-height: 1;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    &:hover{
+      color: #fff;
+      text-decoration: none;
+    }
     &-main {
       font-size: 30px;
     }
@@ -36,18 +43,21 @@
       >a{
         color: #fff;
         font-weight: 400;
-       /* &:before {
-          content: "";
-          width: 0;
-          height: 0;
-          border-style: solid;
-          border-width: 0 13.5px 11px 13.5px;
-          border-color: transparent transparent $body-bg transparent;
-          left: 50%;
-          position: absolute;
-          margin-left: -13.5px;
-          top: 37px;
-        }*/
+        @media (min-width: $screen-md-min) {
+          &:before {
+            content: "";
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 13.5px 11px 13.5px;
+            border-color: transparent transparent $body-bg transparent;
+            left: 50%;
+            position: absolute;
+            margin-left: -13.5px;
+            top: 37px;
+          }
+        }
+
       }
     }
     &:last-child{

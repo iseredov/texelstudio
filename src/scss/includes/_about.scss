@@ -1,0 +1,58 @@
+.about-main-block{
+  margin-top: 160px;
+  margin-bottom: $line-height-computed*2;
+  figcaption{
+    margin-top: $line-height-computed;
+    font-size: $font-size-h2;
+  }
+}
+.about-main-resume{
+  font-size: 16px;
+  border-bottom: 1px solid;
+  display: inline-block;
+  margin-bottom: 5px;
+
+  &:hover{
+    text-decoration: none;
+    border-bottom-color: transparent;
+  }
+}
+
+$speed: 150;
+
+.credits{
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+  &:before,&:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height:80px;
+    background: linear-gradient(to bottom, $body-bg, rgba( $body-bg, 0 ));
+    z-index: 1000;
+  }
+  &:after{
+    bottom:0;
+    background: linear-gradient(to top, $body-bg, rgba( $body-bg, 0 ));
+  }
+  &-wrapper{
+    position: absolute;
+    width: 400px;
+    margin-left: -200px;
+    top: 100%;
+    left:50%;
+    animation: 10s credits linear infinite;
+  }
+  &-item{
+    height: 150px;
+    &-name{
+      font-size: $font-size-h2;
+
+    }
+    &-desc{
+
+    }
+  }
+}

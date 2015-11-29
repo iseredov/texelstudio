@@ -1,8 +1,12 @@
 .project-item{
+  text-align: center;
   &:hover,&:focus{
     text-decoration: none;
     .project-item-img:before{
       animation: circle .5s;
+    }
+    .project-item-name>span{
+      border: none;
     }
   }
 
@@ -58,6 +62,9 @@
   font-weight: 400;
   color: $text-muted;
   margin-bottom: 30px;
+  i.fa{
+    font-size: 110%;
+  }
   >a,>span{
    margin-right: 10px;
   }
@@ -81,7 +88,10 @@
     top:50%;
     margin-top: -60px;
     font-size: 100px;
-    color: $text-muted;
+    color: #c6c6c6;
+    &:hover{
+      color: $text-color;
+    }
   }
   &-previous{
     left: 30px;
@@ -103,6 +113,7 @@
     width: 170px;
     display: inline-block;
     font-size: 16px;
+    font-weight: 400;
     border: 2px solid $link-color;
     padding: $padding-base-vertical 0;
     text-align: center;
