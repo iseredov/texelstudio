@@ -1,10 +1,15 @@
-<div class="col-md-3 col-sm-4 col-xs-6">
-    <div class="project-item">
-        <a href="#"><img src="holder.js/250x250" class="img-responsive"></a>
-
+<div class="{{#if feature}}col-md-6 col-sm-6 col-xs-12{{else}}col-md-3 col-sm-4 col-xs-6{{/if}}">
+    <a href="project.html" class="project-item">
+        <div class="project-item-img">
+            {{#if feature}}
+            <img src="holder.js/600x260?bg=828282" class="img-responsive">
+            {{else}}
+            <img src="holder.js/250x250?bg=828282" class="img-responsive">
+            {{/if}}
+        </div>
         <div class="project-item-name">
-            <a href="#">DANONE Fruchtzwerge Zoo</a>
+            <span>DANONE Fruchtzwerge Zoo</span>
         </div>
         <p class="project-item-desc">3d model of hydraulic packer</p>
-    </div>
+    </a>
 </div>

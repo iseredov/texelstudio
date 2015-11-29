@@ -27,7 +27,7 @@ $brand-danger:          #d9534f !default;
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:               #fff !default;
+$body-bg:               #f8f8f8 !default;
 //** Global text color on `<body>`.
 $text-color:            $gray-dark !default;
 
@@ -853,7 +853,7 @@ $pre-scrollable-max-height:   340px !default;
 //** Horizontal offset for forms and lists.
 $component-offset-horizontal: 180px !default;
 //** Text muted color
-$text-muted:                  $gray-light !default;
+$text-muted:                  #a0a0a0 !default;
 //** Abbreviations and acronyms border color
 $abbr-border-color:           $gray-light !default;
 //** Headings small color

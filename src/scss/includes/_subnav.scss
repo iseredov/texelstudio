@@ -1,0 +1,32 @@
+.sub-nav{
+  font-size: 16px;
+  font-weight: 400;
+  padding:0;
+  list-style: none;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  >li{
+    display: inline-block;
+    position: relative;
+    &.active{
+      margin: 0 10px;
+      >a{
+        color: $link-color;
+        border-color: $link-color;
+      }
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+    a{
+      color: $text-color;
+      display: inline-block;
+      border: 2px solid transparent;
+      padding: 6px 16px;
+      &:hover{
+        text-decoration: none;
+        color: $link-color;
+      }
+    }
+  }
+}

@@ -74,21 +74,6 @@ p {
 
 }
 
-.content{
-  font-size: ($font-size-large);
-  @media (min-width: $screen-sm-min) {
-    //font-weight: 300;
-
-  }
-
-  a{
-    text-decoration: underline;
-    &:hover{
-      text-decoration: none;
-    }
-  }
-}
-
 // Emphasis & misc
 // -------------------------
 
@@ -154,9 +139,7 @@ mark,
 // -------------------------
 
 .page-header {
-  padding-bottom: (($line-height-computed / 2) - 1);
-  margin: ($line-height-computed * 2) 0 $line-height-computed;
-  border-bottom: 1px solid $page-header-border-color;
+  margin: ($line-height-computed * 2.5) 0 $line-height-computed;
 }
 
 
@@ -344,6 +327,7 @@ address {
   &-intro{
     text-align: center;
     font-size: $font-size-large;
+    margin-bottom: $grid-gutter-width/2;
   }
   &-heading{
     display: inline-block;
@@ -355,4 +339,14 @@ address {
 
   }
 
+}
+
+.content{
+  address{
+    .fa{
+      color: $text-muted;
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
 }

@@ -22,6 +22,8 @@
 html {
   font-size: 10px;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
+  position: relative;
+  min-height: 100%;
 }
 
 body {
@@ -31,6 +33,7 @@ body {
   line-height: $line-height-base;
   color: $text-color;
   background-color: $body-bg;
+  margin-bottom: 100px;
 }
 
 // Reset fonts for relevant elements
@@ -50,13 +53,13 @@ a {
   color: $link-color;
   text-decoration: none;
 
-  &:hover,
-  &:focus {
+  &:hover {
     color: $link-hover-color;
     text-decoration: $link-hover-decoration;
   }
 
   &:focus {
+    color: $link-hover-color;
     @include tab-focus;
   }
 }
@@ -71,6 +74,10 @@ figure {
   margin: 0;
 }
 
+
+.content{
+  font-size: $font-size-large;
+}
 
 // Images
 
@@ -163,6 +170,10 @@ hr {
 
 
 .site-footer{
+  position: absolute;
+  left:0;
+  right: 0;
+  bottom: 0;
   min-height: 54px;
   font-size: 16px;
   background: #1a1a1a;
@@ -170,5 +181,33 @@ hr {
   .copyright{
     padding: ((54-16px*$line-height-base)/2) 0;
     margin: 0;
+  }
+
+  .footer-social{
+    padding: ((54px-32)/2) 0;
+    float: right;
+    .social{
+      float: left;
+      display: block;
+      width: 32px;
+      height: 32px;
+      background: no-repeat url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAAAgCAMAAADt/IAXAAAApVBMVEXPSDIwWJEAd7UsqNL///+YrMhAmcfA3e3npJmW1Omw3+7x+fxhvt1/utrhjX/SUz789PNTuNpgqtEQf7nL6vTQ5vG95PF7yeNuw+D23dk5rdTl9fr56eZGs9fz0szww7zk9Pqj2euHzuYgiL7qr6XY7/ew1eifzOOQxN9gvd323NhwstVkgqzegXLVX0vm6/LM1uSxwNVQocwwkMN+l7pKbZ7kmIz+f9+TAAABq0lEQVRYw+3V6XKCMBSGYWs+lQCu4C7u+9a9939pPQUhBQMYxqkzHd4/8O88M8mBQlrFlFhKTynlgBxwK8BaPBbQAtrWvQCfrwaokgLAAnW4EdDj+nzAmBMH+AClCHgHtU0A9Jr++IENajrX9RjAEXJAXdsDe60uP4I2gHICoGP4ghm8bDJJAc9yQK0Bt8ZJCrAO23LSJbQB7r3Br8OkgCOkgBqA0WQyQv+caQ11AKsunbwp5ssBJVAv0S2oNwDNhcQcQatardIiVqniYlOprFthgOMONTqc+wCeBChFAdplvggIASreHQDVgtsmfAk5InWVAP1gXjrAgNdb+AiimUoAYOw+3Mb+iwwgCOvfAPMKwC5Fh4tKGQH0RbTaP88AILZP1FEAiCPQNG0JLFPugPtlpkKAgTkMn4AaQFxCeqslA+hRLF8BWHi+zZQAYg2/gIbYRBVA04DIaCoCxIcIOBUyAZijr0I7qLQF4lNMB5ARwMypmK8OoJ9RH+gvz4UsgMFuNwvGD02mDhBlArCeHYznjP09gHK6XNf5nG7fQwCi+wNiywE54J8AvgFq3S4VWs0m2QAAAABJRU5ErkJggg==');
+      &:hover{
+        opacity: 0.7;
+      }
+      &.social-google{
+        background-position: 0 0;
+      }
+      &.social-in{
+        background-position: -32px 0;
+      }
+      &.social-fb{
+        background-position: -64px 0;
+      }
+      &.social-tweetter{
+        background-position: -96px 0;
+      }
+    }
+
   }
 }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{> _head }}
+</head>
+
+<body>
+{{> _header }}
+
+
+<div class="container">
+
+    <nav class="text-center">
+        <ul class="sub-nav">
+            <li class="active">
+                <a href="#">Projects</a>
+            </li>
+            <li>
+                <a href="#">W.I.P.</a>
+            </li>
+            <li>
+                <a href="#">Speed Sculpting</a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+
+        <div class="row">
+            {{> _project_item feature=1}}
+            {{> _project_item feature=1}}
+            {{> _project_item feature=1}}
+            {{> _project_item feature=1}}
+
+            {{> _project_item}}
+            {{> _project_item}}
+            {{> _project_item}}
+            {{> _project_item}}
+
+        </div>
+
+</div>
+{{> _footer}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.0/holder.js"></script>
+</body>
+</html>

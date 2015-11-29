@@ -1,13 +1,120 @@
 .project-item{
+  &:hover,&:focus{
+    text-decoration: none;
+    .project-item-img:before{
+      animation: circle .5s;
+    }
+  }
+
+  &-img{
+    position: relative;
+    overflow: hidden;
+    &:before{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 2;
+      display: block;
+      content: '';
+      width: 0;
+      height: 0;
+      background: rgba(255,255,255,.2);
+      border-radius: 100%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+    }
+  }
+
   &-name{
     margin-top: 5px;
     font-size: 16px;
     font-weight: 400;
-    >a{
-      text-decoration: underline;
+    >span{
+      border-bottom: 1px solid;
     }
   }
   &-desc{
-    margin-bottom: 35px;
+    margin: 5px 0 35px;
+    color: $text-color;
+  }
+}
+
+@keyframes circle {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+  }
+}
+
+.meta-info{
+  margin-top: -10px;
+  font-weight: 400;
+  color: $text-muted;
+  margin-bottom: 30px;
+  >a,>span{
+   margin-right: 10px;
+  }
+  a{
+    color: $text-muted;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
+
+.project-page{
+  .content{
+    margin-bottom: 40px;
+  }
+}
+
+.project-pager-fixed{
+  &-previous,&-next{
+    position: fixed;
+    top:50%;
+    margin-top: -60px;
+    font-size: 100px;
+    color: $text-muted;
+  }
+  &-previous{
+    left: 30px;
+  }
+  &-next{
+    right: 30px;
+  }
+}
+
+.project-pager{
+  i.fa{
+    font-size: 20px;
+    top:1px;
+    display: inline-block;
+    position: relative;
+    margin: 0 8px;
+  }
+  &-previous,&-next{
+    width: 170px;
+    display: inline-block;
+    font-size: 16px;
+    border: 2px solid $link-color;
+    padding: $padding-base-vertical 0;
+    text-align: center;
+    &:hover{
+      background: $link-color;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+  &-previous{
+  }
+  &-next{
+    float: right;
   }
 }

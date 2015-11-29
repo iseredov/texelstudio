@@ -2,6 +2,7 @@
   background: #191919;
   color: #fff;
   min-height: 78px;
+  position: relative;
 }
 
 .site {
@@ -30,15 +31,49 @@
   >li{
     display: inline-block;
     margin-right: 30px;
+    position: relative;
+    &.active{
+      >a{
+        color: #fff;
+        font-weight: 400;
+       /* &:before {
+          content: "";
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 13.5px 11px 13.5px;
+          border-color: transparent transparent $body-bg transparent;
+          left: 50%;
+          position: absolute;
+          margin-left: -13.5px;
+          top: 37px;
+        }*/
+      }
+    }
     &:last-child{
       margin-right: 0;
     }
     a{
       color: #bebebe;
+      position: relative;
       &:hover{
         text-decoration: none;
         color: #fff;
       }
     }
+  }
+}
+
+.lang-switcher{
+  position: absolute;
+  top:5px;
+  right: 20px;
+  color: #bebebe;
+  font-size: 12px;
+  border-bottom: 1px solid;
+  &:hover{
+    text-decoration: none;
+    color: #fff;
+    border-bottom: none;
   }
 }
