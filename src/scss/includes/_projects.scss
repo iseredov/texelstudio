@@ -6,7 +6,7 @@
       animation: circle .5s;
     }
     .project-item-name>span{
-      border: none;
+      color: $link-color;
     }
   }
 
@@ -27,19 +27,23 @@
       transform: translate(-50%, -50%);
       opacity: 0;
     }
+    .img-responsive{
+      display: inline-block;
+    }
   }
 
   &-name{
     margin-top: 5px;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: $font-size-h3;
+    font-weight: $headings-font-weight;
+    color: $headings-color;
     >span{
-      border-bottom: 1px solid;
     }
   }
   &-desc{
     margin: 5px 0 35px;
-    color: $text-color;
+    color: #555;
+    font-size: 16px;
   }
 }
 
@@ -83,6 +87,9 @@
 }
 
 .project-pager-fixed{
+  @media (max-width: $screen-lg-min) {
+    display: none;
+  }
   &-previous,&-next{
     position: fixed;
     top:50%;
@@ -128,4 +135,9 @@
   &-next{
     float: right;
   }
+}
+
+.more-block{
+  text-align: center;
+  margin-top: 20px;
 }

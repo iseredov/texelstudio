@@ -2,7 +2,7 @@
 //@import "bootstrap/variables";
 @import "includes/variables";
 @import "bootstrap/mixins";
-//@import "includes/mixins";
+@import "includes/mixins";
 @import "includes/fonts";
 
 // Reset and dependencies
@@ -63,6 +63,7 @@
 //@import "includes/forms";
 
 @import "includes/header";
+@import "includes/buttons";
 @import "includes/slideshow";
 @import "includes/projects";
 @import "includes/subnav";

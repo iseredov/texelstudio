@@ -1,5 +1,53 @@
-.slideshow{
-  height: 706px;
+.slide-item{
   background: 50% no-repeat url('#{$image-path}xi_01.jpg');
   background-size: cover;
+  >.container{
+    position: relative;
+    height: 480px;
+    @media (min-width: $screen-sm-min) {
+      height: 706px;
+    }
+  }
+
+  &-title{
+    font-weight: 400;
+    color: #fff;
+    font-size: $font-size-h1;
+    margin: 0 0 20px;
+  }
+
+  &-caption{
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    &.caption-bg{
+      background: rgba(0,0,0,.7);
+    }
+    @media (min-width: $screen-sm-min) {
+      margin-left: 60px;
+      margin-right: 60px;
+      position: absolute;
+      &.caption-top-left{
+        top:0;
+        left: 0;
+      }
+      &.caption-top-right{
+        top:0;
+        right: 0;
+      }
+      &.caption-bottom-right{
+        bottom:0;
+        right: 0;
+      }
+      &.caption-bottom-left{
+        bottom:0;
+        left: 0;
+      }
+    }
+
+  }
 }

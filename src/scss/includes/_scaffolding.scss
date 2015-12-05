@@ -29,11 +29,10 @@ html {
 body {
   font-family: $font-family-base;
   font-size: $font-size-base;
-  font-weight: 300;
   line-height: $line-height-base;
   color: $text-color;
   background-color: $body-bg;
-  margin-bottom: 100px;
+  margin-bottom: 55px;
 }
 
 // Reset fonts for relevant elements
@@ -77,6 +76,10 @@ figure {
 
 .content{
   font-size: $font-size-large;
+}
+
+.main{
+  padding-bottom: 40px;
 }
 
 // Images
@@ -170,6 +173,7 @@ hr {
 
 .page-section{
   margin-top: 70px;
+  padding-bottom: 70px;
 }
 
 .bg-gray{

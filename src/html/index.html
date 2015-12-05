@@ -6,8 +6,51 @@
 
 <body>
 {{> _header }}
-
-<div class="slideshow">
+<div class="owl-carousel owl-theme">
+    <div class="slide-item">
+        <div class="container">
+            <div class="slide-item-caption caption-top-left caption-bg">
+                <h2 class="slide-item-title">Sphinx Cat</h2>
+                <p>3D model of cat for my project</p>
+                <div class="more-block">
+                    <a href="#" class="btn btn-secondary-outline text-uppercase btn-lg">View work</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide-item">
+        <div class="container">
+            <div class="slide-item-caption caption-top-right caption-bg">
+                <h2 class="slide-item-title">Sphinx Cat</h2>
+                <p>3D model of cat for my project</p>
+                <div class="more-block">
+                    <a href="#" class="btn btn-secondary-outline text-uppercase btn-lg">View work</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide-item">
+        <div class="container">
+            <div class="slide-item-caption caption-bottom-left caption-bg">
+                <h2 class="slide-item-title">Sphinx Cat</h2>
+                <p>3D model of cat for my project</p>
+                <div class="more-block">
+                    <a href="#" class="btn btn-secondary-outline text-uppercase btn-lg">View work</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide-item">
+        <div class="container">
+            <div class="slide-item-caption caption-bottom-right caption-bg">
+                <h2 class="slide-item-title">Sphinx Cat</h2>
+                <p>3D model of cat for my project</p>
+                <div class="more-block">
+                    <a href="#" class="btn btn-secondary-outline text-uppercase btn-lg">View work</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>
 
@@ -15,7 +58,7 @@
 <section class="page-section">
     <div class="container">
         <div class="section-intro col-md-10 col-md-offset-1">
-            <a href="#" class="h1 section-heading" title="View all projects">Recent Projects</a>
+            <h2 class="h1 section-heading" title="View all projects">Recent Projects</h2>
 
             <p>My name is Pavel Kondratenko. I'm a professional 3d artist. Mainly I do modeling, texturing and shader
                 creation for films, commercials and games.</p>
@@ -29,9 +72,9 @@
 
             {{> _project_item}}
             {{> _project_item}}
-            {{> _project_item}}
-            {{> _project_item}}
-
+        </div>
+        <div class="more-block">
+            <a href="#" class="btn btn-primary-outline text-uppercase btn-lg">View all works</a>
         </div>
     </div>
 </section>
@@ -39,7 +82,7 @@
 <section class="bg-gray page-section">
     <div class="container">
         <div class="section-intro col-md-10 col-md-offset-1">
-            <a href="#" class="h1 section-heading">Speed Sculpting</a>
+            <h2 class="h1 section-heading">Speed Sculpting</h2>
 
             <p>My name is Pavel Kondratenko. I'm a professional 3d artist. Mainly I do modeling, texturing and shader
                 creation for films, commercials and games.</p>
@@ -49,12 +92,27 @@
             {{> _project_item}}
             {{> _project_item}}
             {{> _project_item}}
-            {{> _project_item}}
+        </div>
+        <div class="more-block">
+            <a href="#" class="btn btn-primary-outline text-uppercase btn-lg">View all works</a>
         </div>
     </div>
 
 </section>
 {{> _footer}}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.0/holder.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            items:1,
+            loop:true,
+            smartSpeed:450,
+            autoplayTimeout:5000,
+            autoplay: true,
+            nav: true,
+            navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+            autoplayHoverPause: true
+        });
+    });
+</script>
 </body>
 </html>

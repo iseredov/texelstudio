@@ -30,6 +30,13 @@ var fonts = {
     out: dest + 'fonts/'
 };
 
+// js
+var js = {
+    in: [source + 'js/*.*'],
+    watch: source + 'js/**/*.js',
+    out: dest + 'js/'
+};
+
 // images
 var img = {
     in: [source + 'img/*.*'],
@@ -39,7 +46,7 @@ var img = {
 
 // css source file: .scss files
 var css = {
-    in: source + 'scss/*.scss',
+    in: source + 'scss/**/*.scss',
     out: dest + 'css/',
     watch: source + 'scss/**/*',
     sassOpts: {
@@ -71,6 +78,13 @@ gulp.task('fonts', function () {
     return gulp
         .src(fonts.in)
         .pipe(gulp.dest(fonts.out))
+});
+
+// copy bootstrap required fonts to dest
+gulp.task('js', function () {
+    return gulp
+        .src(js.in)
+        .pipe(gulp.dest(js.out))
 });
 
 // copy bootstrap required fonts to dest
@@ -113,14 +127,15 @@ gulp.task('watch', function(){
     gulp.watch(css.watch, ['css']);
     gulp.watch(html.watch, ['html']);
     gulp.watch(img.watch, ['images']);
+    gulp.watch(js.watch, ['js']);
 
 });
 
 // compile scss
-gulp.task('build', ['fonts','css','html','images'], function () {
+gulp.task('build', ['fonts','css','html','images','js'], function () {
     return gulp.src(css.in)
         .pipe(sass(css.sassOpts))
         .pipe(gulp.dest(css.out));
 });
 
-gulp.task('default', ['css','images','html','server','watch']);
+gulp.task('default', ['css','images','html','js','server','watch']);
