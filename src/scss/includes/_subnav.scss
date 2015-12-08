@@ -8,8 +8,8 @@
   >li{
     display: inline-block;
     position: relative;
+    margin: 0 10px;
     &.active{
-      margin: 0 10px;
       >a{
         color: $link-color;
         border-color: $link-color;

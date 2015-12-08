@@ -10,19 +10,19 @@
   .owl-theme .owl-nav [class*='owl-'] {
     position: absolute;
     top: 50%;
-    margin-top: -17px;
+    margin-top: -7px;
     color: #FFF;
     font-size: 14px;
-    padding: 4px 7px;
+    line-height: 1;
     display: inline-block;
     cursor: pointer; }
     .owl-theme .owl-nav [class*='owl-']:hover {
       color: #FFF;
       text-decoration: none; }
   .owl-theme .owl-nav .owl-prev {
-    left: 20px; }
+    left: 25px; }
   .owl-theme .owl-nav .owl-next {
-    right: 20px; }
+    right: 25px; }
   .owl-theme .owl-nav .disabled {
     opacity: 0.5;
     cursor: default; }

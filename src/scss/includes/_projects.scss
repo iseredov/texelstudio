@@ -1,18 +1,39 @@
 .project-item{
   text-align: center;
-  &:hover,&:focus{
-    text-decoration: none;
-    .project-item-img:before{
-      animation: circle .5s;
+  display: block;
+  margin-bottom: 30px;
+  &.download-item{
+    margin-bottom: 70px;
+    .project-item-desc{
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      height: 50px;
     }
-    .project-item-name>span{
-      color: $link-color;
+  }
+  .project-item-main-link{
+    &:hover,&:focus{
+      text-decoration: none;
+      .project-item-img:before{
+        animation: circle .5s;
+      }
+      .project-item-name{
+        color: $link-color;
+      }
     }
+  }
+
+  .project-item-btn{
+    text-align: center;
+    margin-top: 20px;
   }
 
   &-img{
     position: relative;
     overflow: hidden;
+    display: block;
     &:before{
       position: absolute;
       top: 50%;
@@ -34,16 +55,16 @@
 
   &-name{
     margin-top: 5px;
+    display: block;
     font-size: $font-size-h3;
     font-weight: $headings-font-weight;
     color: $headings-color;
-    >span{
-    }
   }
   &-desc{
-    margin: 5px 0 35px;
+    margin: 5px 0 5px;
     color: #555;
     font-size: 16px;
+    display: block;
   }
 }
 

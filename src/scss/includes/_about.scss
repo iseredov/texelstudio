@@ -4,6 +4,7 @@
   figcaption{
     margin-top: $line-height-computed;
     font-size: $font-size-h2;
+    font-weight: $headings-font-weight;
   }
 }
 .about-main-resume{
@@ -48,11 +49,11 @@ $speed: 150;
   &-item{
     height: 150px;
     &-name{
-      font-size: $font-size-h2;
+      font-size: $font-size-h3;
 
     }
     &-desc{
-
+      font-size: 14px;
     }
   }
 }

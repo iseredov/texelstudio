@@ -11,10 +11,10 @@
 		[class*='owl-'] {
 			position: absolute;
 			top:50%;
-			margin-top: -$nav-font-size/2 - 10;
+			margin-top: -$nav-font-size/2;
 			color: $nav-color;
 			font-size: $nav-font-size;
-			padding: $nav-padding;
+			line-height: 1;
 			//background: $nav-background;
 			display: inline-block;
 			cursor: pointer;
@@ -27,10 +27,10 @@
 			}
 		}
 		.owl-prev{
-			left: 20px;
+			left: 25px;
 		}
 		.owl-next{
-			right: 20px;
+			right: 25px;
 		}
 		.disabled {
 			opacity: $nav-disabled-opacity;
