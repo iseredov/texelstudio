@@ -1948,15 +1948,16 @@ input[type="button"].btn-block {
   margin: 0 8px; }
 
 .project-pager-previous, .project-pager-next {
+  padding: 8px 10px;
   display: inline-block;
   font-size: 16px;
   font-weight: 400;
   border: 2px solid #0078ff;
-  padding: 8px 10px;
   text-align: center; }
   @media (min-width: 768px) {
     .project-pager-previous, .project-pager-next {
-      width: 170px; } }
+      width: 170px;
+      padding: 8px 0; } }
   .project-pager-previous:hover, .project-pager-next:hover {
     background: #0078ff;
     color: #fff;
