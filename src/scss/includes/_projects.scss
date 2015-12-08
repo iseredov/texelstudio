@@ -138,7 +138,10 @@
     margin: 0 8px;
   }
   &-previous,&-next{
-    width: 170px;
+    @media (max-width: $screen-sm-min) {
+      width: 170px;
+    }
+
     display: inline-block;
     font-size: 16px;
     font-weight: 400;
