@@ -328,6 +328,9 @@ address {
     text-align: center;
     font-size: $font-size-large;
     margin-bottom: $grid-gutter-width/2;
+    p:last-child{
+      margin-bottom: 0;
+    }
   }
   &-heading{
     display: inline-block;
