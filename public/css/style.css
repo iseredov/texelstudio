@@ -1952,7 +1952,7 @@ input[type="button"].btn-block {
   font-size: 16px;
   font-weight: 400;
   border: 2px solid #0078ff;
-  padding: 8px 0;
+  padding: 8px 10px;
   text-align: center; }
   @media (min-width: 768px) {
     .project-pager-previous, .project-pager-next {
