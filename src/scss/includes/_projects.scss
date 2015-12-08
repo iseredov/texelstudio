@@ -138,7 +138,7 @@
     margin: 0 8px;
   }
   &-previous,&-next{
-    @media (max-width: $screen-sm-min) {
+    @media (min-width: $screen-sm-min) {
       width: 170px;
     }
 
