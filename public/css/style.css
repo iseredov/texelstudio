@@ -1235,7 +1235,7 @@ mark,
   text-transform: capitalize; }
 
 .text-muted {
-  color: #a0a0a0; }
+  color: #b3b3b3; }
 
 .text-primary {
   color: #0078ff; }
@@ -1454,7 +1454,7 @@ address {
     text-decoration: none; }
 
 .content address .fa {
-  color: #a0a0a0;
+  color: #b3b3b3;
   display: inline-block;
   margin-right: 10px; }
 
@@ -1907,14 +1907,14 @@ input[type="button"].btn-block {
 .meta-info {
   margin-top: -10px;
   font-weight: 400;
-  color: #a0a0a0;
+  color: #b3b3b3;
   margin-bottom: 30px; }
   .meta-info i.fa {
     font-size: 110%; }
   .meta-info > a, .meta-info > span {
     margin-right: 10px; }
   .meta-info a {
-    color: #a0a0a0; }
+    color: #b3b3b3; }
     .meta-info a:hover {
       text-decoration: none; }
 
@@ -2002,6 +2002,8 @@ input[type="button"].btn-block {
     margin-top: 20px;
     font-size: 38px;
     font-weight: 300; }
+  .about-main-block span {
+    font-size: 14px; }
 
 .about-main-resume {
   font-size: 16px;
