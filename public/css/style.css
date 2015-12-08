@@ -1575,6 +1575,9 @@ hr {
 .bg-gray {
   background: #dfdfdf; }
 
+.bg-gray.page-section .download-item {
+  margin-bottom: 0; }
+
 .site-footer {
   position: absolute;
   left: 0;
