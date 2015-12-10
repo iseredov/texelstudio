@@ -1739,11 +1739,8 @@ hr {
   top: 8px;
   right: 20px;
   color: #bebebe;
-  font-size: 12px;
-  border-bottom: 1px solid;
-  text-decoration: none; }
+  font-size: 12px; }
   .lang-switcher:hover {
-    text-decoration: none;
     color: #fff;
     border-bottom: none; }
 
@@ -2004,7 +2001,7 @@ input[type="button"].btn-block {
   font-size: 60px;
   color: #c6c6c6; }
   .project-pager-fixed-previous:hover, .project-pager-fixed-next:hover {
-    color: #555555; }
+    color: #191919; }
 
 .project-pager-fixed-previous {
   left: 30px; }
