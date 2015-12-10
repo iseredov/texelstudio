@@ -15,6 +15,7 @@
   cursor: pointer;
   user-select: none;
   border: 2px solid transparent;
+  text-decoration: none;
   @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-computed, 0);
   @include transition(all .2s ease-in-out);
 

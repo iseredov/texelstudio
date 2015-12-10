@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Open Sans';
   src: url("../fonts/opensanslight.woff") format("woff"), url("../fonts/opensanslight.ttf") format("truetype");
@@ -40,6 +41,67 @@
   font-weight: 700;
   font-style: italic; }
 
+@font-face {
+  font-family: 'fontello';
+  src: url("../fonts/fontello.woff") format("woff"), url("../fonts/fontello.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic; }
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.icon-left-open-big:before {
+  content: '\e800'; }
+
+/* '' */
+.icon-right-open-big:before {
+  content: '\e801'; }
+
+/* '' */
+.icon-folder:before {
+  content: '\e802'; }
+
+/* '' */
+.icon-clock:before {
+  content: '\e803'; }
+
+/* '' */
+.icon-phone:before {
+  content: '\e804'; }
+
+/* '' */
+.icon-address:before {
+  content: '\e805'; }
+
+/* '' */
+.icon-email:before {
+  content: '\e806'; }
+
+/* '' */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -806,6 +868,7 @@ th {
       -ms-user-select: none;
           user-select: none;
   border: 2px solid transparent;
+  text-decoration: none;
   padding: 8px 15px;
   font-size: 16px;
   line-height: 20px;
@@ -1494,11 +1557,10 @@ textarea {
   line-height: inherit; }
 
 a {
-  color: #0078ff;
-  text-decoration: none; }
+  color: #0078ff; }
   a:hover {
     color: #0078ff;
-    text-decoration: underline; }
+    text-decoration: none; }
   a:focus {
     color: #0078ff;
     outline: thin dotted;
@@ -1575,8 +1637,9 @@ hr {
 .bg-gray {
   background: #dfdfdf; }
 
-.bg-gray.page-section .download-item {
-  margin-bottom: 0; }
+@media (min-width: 992px) {
+  .bg-gray.page-section .download-item {
+    margin-bottom: 0; } }
 
 .site-footer {
   position: absolute;
@@ -1665,7 +1728,8 @@ hr {
       margin-right: 0; }
     .main-nav > li a {
       color: #bebebe;
-      position: relative; }
+      position: relative;
+      text-decoration: none; }
       .main-nav > li a:hover {
         text-decoration: none;
         color: #fff; }
@@ -1676,7 +1740,8 @@ hr {
   right: 20px;
   color: #bebebe;
   font-size: 12px;
-  border-bottom: 1px solid; }
+  border-bottom: 1px solid;
+  text-decoration: none; }
   .lang-switcher:hover {
     text-decoration: none;
     color: #fff;
@@ -1696,6 +1761,7 @@ hr {
       -ms-user-select: none;
           user-select: none;
   border: 2px solid transparent;
+  text-decoration: none;
   padding: 8px 15px;
   font-size: 16px;
   line-height: 20px;
@@ -1847,13 +1913,15 @@ input[type="button"].btn-block {
       text-overflow: ellipsis;
       overflow: hidden;
       height: 50px; }
-  .project-item .project-item-main-link:hover, .project-item .project-item-main-link:focus {
+  .project-item .project-item-main-link {
     text-decoration: none; }
-    .project-item .project-item-main-link:hover .project-item-img:before, .project-item .project-item-main-link:focus .project-item-img:before {
-      -webkit-animation: circle .5s;
-              animation: circle .5s; }
-    .project-item .project-item-main-link:hover .project-item-name, .project-item .project-item-main-link:focus .project-item-name {
-      color: #0078ff; }
+    .project-item .project-item-main-link:hover, .project-item .project-item-main-link:focus {
+      text-decoration: none; }
+      .project-item .project-item-main-link:hover .project-item-img:before, .project-item .project-item-main-link:focus .project-item-img:before {
+        -webkit-animation: circle .5s;
+                animation: circle .5s; }
+      .project-item .project-item-main-link:hover .project-item-name, .project-item .project-item-main-link:focus .project-item-name {
+        color: #0078ff; }
   .project-item .project-item-btn {
     text-align: center;
     margin-top: 20px; }
@@ -1914,10 +1982,9 @@ input[type="button"].btn-block {
   font-weight: 400;
   color: #b3b3b3;
   margin-bottom: 30px; }
-  .meta-info i.fa {
-    font-size: 110%; }
   .meta-info > a, .meta-info > span {
-    margin-right: 10px; }
+    margin-right: 10px;
+    text-decoration: none; }
   .meta-info a {
     color: #b3b3b3; }
     .meta-info a:hover {
@@ -1933,8 +2000,8 @@ input[type="button"].btn-block {
 .project-pager-fixed-previous, .project-pager-fixed-next {
   position: fixed;
   top: 50%;
-  margin-top: -60px;
-  font-size: 100px;
+  margin-top: -30px;
+  font-size: 60px;
   color: #c6c6c6; }
   .project-pager-fixed-previous:hover, .project-pager-fixed-next:hover {
     color: #555555; }
@@ -1958,6 +2025,7 @@ input[type="button"].btn-block {
   font-size: 16px;
   font-weight: 400;
   border: 2px solid #0078ff;
+  text-decoration: none;
   text-align: center; }
   @media (min-width: 768px) {
     .project-pager-previous, .project-pager-next {
@@ -2012,12 +2080,8 @@ input[type="button"].btn-block {
 
 .about-main-resume {
   font-size: 16px;
-  border-bottom: 1px solid;
   display: inline-block;
   margin-bottom: 5px; }
-  .about-main-resume:hover {
-    text-decoration: none;
-    border-bottom-color: transparent; }
 
 .credits {
   height: 750px;

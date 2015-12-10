@@ -14,6 +14,7 @@
     }
   }
   .project-item-main-link{
+    text-decoration: none;
     &:hover,&:focus{
       text-decoration: none;
       .project-item-img:before{
@@ -87,11 +88,9 @@
   font-weight: 400;
   color: $text-muted;
   margin-bottom: 30px;
-  i.fa{
-    font-size: 110%;
-  }
   >a,>span{
    margin-right: 10px;
+    text-decoration: none;
   }
   a{
     color: $text-muted;
@@ -114,8 +113,8 @@
   &-previous,&-next{
     position: fixed;
     top:50%;
-    margin-top: -60px;
-    font-size: 100px;
+    margin-top: -30px;
+    font-size: 60px;
     color: #c6c6c6;
     &:hover{
       color: $text-color;
@@ -148,7 +147,7 @@
     font-size: 16px;
     font-weight: 400;
     border: 2px solid $link-color;
-
+    text-decoration: none;
     text-align: center;
     &:hover{
       background: $link-color;

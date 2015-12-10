@@ -12,14 +12,8 @@
 }
 .about-main-resume{
   font-size: 16px;
-  border-bottom: 1px solid;
   display: inline-block;
   margin-bottom: 5px;
-
-  &:hover{
-    text-decoration: none;
-    border-bottom-color: transparent;
-  }
 }
 
 $speed: 150;
