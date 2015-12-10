@@ -2117,3 +2117,174 @@ input[type="button"].btn-block {
   border-bottom: 1px solid #959595;
   padding-bottom: 10px;
   margin-bottom: 30px; }
+
+.container.contacts {
+  overflow: hidden;
+  position: relative;
+  min-height: 820px;
+  margin-bottom: 70px; }
+  @media (max-width: 768px) {
+    .container.contacts {
+      min-height: 1000px; } }
+  .container.contacts .content {
+    position: relative;
+    z-index: 1000; }
+
+.letters .container {
+  position: relative; }
+
+.letters .letters-content {
+  position: absolute;
+  right: 600px;
+  width: 917px;
+  bottom: 206px;
+  background: no-repeat 50% 50% url(../img/letters.png);
+  height: 199px; }
+
+.ufo {
+  z-index: 100; }
+  .ufo .frame {
+    width: 611px;
+    height: 536px;
+    position: absolute;
+    bottom: 0;
+    right: -80px;
+    background: no-repeat 0 0 url(../img/frames.jpg); }
+  .ufo .frame2 {
+    background-position-x: -611px;
+    -webkit-animation: move-eye 23.55s infinite;
+            animation: move-eye 23.55s infinite;
+    opacity: 0; }
+  .ufo .frame3 {
+    background-position-x: -1222px;
+    -webkit-animation: close-eye 23.55s infinite;
+            animation: close-eye 23.55s infinite;
+    opacity: 0; }
+  .ufo .frame4 {
+    background-position-x: -2444px; }
+    .ufo .frame4 .message {
+      position: absolute;
+      display: none;
+      bottom: 100%;
+      right: 186px;
+      width: 141px;
+      height: 114px;
+      background: no-repeat 50%; }
+      .ufo .frame4 .message.message-ru {
+        background-image: url(../img/message-ru.png); }
+    .ufo .frame4:hover {
+      background-position-x: -1833px; }
+      .ufo .frame4:hover .message {
+        display: block; }
+
+@-webkit-keyframes move-eye {
+  0% {
+    opacity: 0; }
+  55.1% {
+    opacity: 0; }
+  55.2% {
+    opacity: 1; }
+  63.3% {
+    opacity: 1; }
+  63.4% {
+    opacity: 0; }
+  77.9% {
+    opacity: 0; }
+  78% {
+    opacity: 1; }
+  90.6% {
+    opacity: 1; }
+  90.7% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@keyframes move-eye {
+  0% {
+    opacity: 0; }
+  55.1% {
+    opacity: 0; }
+  55.2% {
+    opacity: 1; }
+  63.3% {
+    opacity: 1; }
+  63.4% {
+    opacity: 0; }
+  77.9% {
+    opacity: 0; }
+  78% {
+    opacity: 1; }
+  90.6% {
+    opacity: 1; }
+  90.7% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes close-eye {
+  0% {
+    opacity: 0; }
+  16.99% {
+    opacity: 0; }
+  17% {
+    opacity: 1; }
+  18% {
+    opacity: 0; }
+  38.99% {
+    opacity: 0; }
+  39% {
+    opacity: 1; }
+  40% {
+    opacity: 0; }
+  59.99% {
+    opacity: 0; }
+  60% {
+    opacity: 1; }
+  61% {
+    opacity: 0; }
+  79.99% {
+    opacity: 0; }
+  80% {
+    opacity: 1; }
+  81% {
+    opacity: 0; }
+  98.99% {
+    opacity: 0; }
+  99% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes close-eye {
+  0% {
+    opacity: 0; }
+  16.99% {
+    opacity: 0; }
+  17% {
+    opacity: 1; }
+  18% {
+    opacity: 0; }
+  38.99% {
+    opacity: 0; }
+  39% {
+    opacity: 1; }
+  40% {
+    opacity: 0; }
+  59.99% {
+    opacity: 0; }
+  60% {
+    opacity: 1; }
+  61% {
+    opacity: 0; }
+  79.99% {
+    opacity: 0; }
+  80% {
+    opacity: 1; }
+  81% {
+    opacity: 0; }
+  98.99% {
+    opacity: 0; }
+  99% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
