@@ -2104,8 +2104,8 @@ input[type="button"].btn-block {
     margin-left: -200px;
     top: 100%;
     left: 50%;
-    -webkit-animation: 10s credits linear infinite;
-            animation: 10s credits linear infinite; }
+    -webkit-animation: 10s credits 0.1s linear infinite;
+            animation: 10s credits 0.1s linear infinite; }
   .credits-item {
     height: 150px; }
     .credits-item-name {

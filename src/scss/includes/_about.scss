@@ -41,7 +41,7 @@ $speed: 150;
     margin-left: -200px;
     top: 100%;
     left:50%;
-    animation: 10s credits linear infinite;
+    animation: 10s credits 0.1s linear infinite;
   }
   &-item{
     height: 150px;
