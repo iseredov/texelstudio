@@ -107,7 +107,7 @@
 }
 
 .project-pager-fixed{
-  @media (max-width: $screen-lg-min) {
+  @media (max-width: $screen-lg-min+228) {
     display: none;
   }
   &-previous,&-next{

@@ -1990,7 +1990,7 @@ input[type="button"].btn-block {
 .project-page .content {
   margin-bottom: 40px; }
 
-@media (max-width: 1200px) {
+@media (max-width: 1428px) {
   .project-pager-fixed {
     display: none; } }
 
