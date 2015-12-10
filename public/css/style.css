@@ -2062,6 +2062,7 @@ input[type="button"].btn-block {
     .sub-nav > li a {
       color: #555555;
       display: inline-block;
+      text-decoration: none;
       border: 2px solid transparent;
       padding: 6px 16px; }
       .sub-nav > li a:hover {

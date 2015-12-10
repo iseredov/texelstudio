@@ -21,6 +21,7 @@
     a{
       color: $text-color;
       display: inline-block;
+      text-decoration: none;
       border: 2px solid transparent;
       padding: 6px 16px;
       &:hover{
