@@ -43,7 +43,7 @@
 
 @font-face {
   font-family: 'fontello';
-  src: url("../fonts/fontello.woff") format("woff"), url("../fonts/fontello.ttf") format("truetype");
+  src: url("../fonts/fontello.woff") format("woff"), url("../fonts/fontello.ttf") format("truetype"), url("../fonts/fontello.svg?9607662#fontello") format("svg");
   font-weight: 700;
   font-style: italic; }
 
