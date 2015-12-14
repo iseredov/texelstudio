@@ -2,17 +2,22 @@
 .container.contacts{
   overflow: hidden;
   position: relative;
-  min-height: 820px;
-  @media (max-width: $screen-sm) {
-    min-height: 1000px;
+  @media (min-width: $screen-sm) {
+    min-height: 820px;
   }
   margin-bottom: 70px;
   .content{
     position: relative;
     z-index: 1000;
+    [class^="icon-"]{
+      color: #959595;
+    }
   }
 }
 .letters{
+  @media (max-width: $screen-sm) {
+    display: none;
+  }
   .container{
     position: relative;
   }
@@ -27,7 +32,9 @@
   }
 }
 .ufo{
-
+  @media (max-width: $screen-sm) {
+    display: none;
+  }
   z-index: 100;
   .frame{
     width: 611px;
@@ -64,6 +71,9 @@
       background: no-repeat 50%;
       &.message-ru{
         background-image: url(../img/message-ru.png);
+      }
+      &.message-en{
+        background-image: url(../img/message-en.png);
       }
     }
     &:hover{

@@ -1,0 +1,32 @@
+.not-found{
+  @media (min-width: $screen-md){
+    background:no-repeat 95% 0 url(../img/paper.png);
+  }
+  .dog{
+    width: 455px;
+    margin: 0 auto;
+    background: no-repeat 0 0 url(../img/dog.jpg);
+    &-close{
+      height: 533px;
+      opacity: 0;
+      background: no-repeat -455px 0 url(../img/dog.jpg);
+      animation: dog-eye 4.2s infinite;
+    }
+  }
+}
+
+@keyframes dog-eye {
+  0%{
+    opacity: 0;
+  }
+  95.1%{
+    opacity: 0;
+  }
+  95.2%{
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
