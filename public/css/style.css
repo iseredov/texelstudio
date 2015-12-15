@@ -1681,16 +1681,29 @@ hr {
   font-weight: 300; }
 
 .site-name {
-  margin-top: 15px;
+  padding: 6px 0 0 62px;
+  min-height: 69px;
+  position: relative;
+  margin-top: 9px;
   line-height: 1;
   display: block;
   color: #fff;
   text-decoration: none; }
+  .site-name:before {
+    content: '';
+    position: absolute;
+    width: 48px;
+    height: 69px;
+    background: no-repeat 0 0 url(../img/logo.png);
+    top: 0;
+    left: 0; }
   @media (max-width: 767px) {
     .site-name {
       margin-top: 40px; } }
   .site-name:hover {
     text-decoration: none; }
+    .site-name:hover:before {
+      background-position: 0 -69px; }
   .site-name-main {
     font-size: 30px; }
   .site-name-sub {
@@ -2297,13 +2310,13 @@ input[type="button"].btn-block {
     background: no-repeat 95% 0 url(../img/paper.png); } }
 
 .not-found .dog {
-  width: 455px;
-  margin: 0 auto;
-  background: no-repeat 0 0 url(../img/dog.jpg); }
+  max-width: 455px;
+  margin: 40px auto 0;
+  background: no-repeat 50% 0 url(../img/dog.jpg); }
   .not-found .dog-close {
-    height: 533px;
+    height: 513px;
     opacity: 0;
-    background: no-repeat -455px 0 url(../img/dog.jpg);
+    background: no-repeat 50% -513px url(../img/dog.jpg);
     -webkit-animation: dog-eye 4.2s infinite;
             animation: dog-eye 4.2s infinite; }
 

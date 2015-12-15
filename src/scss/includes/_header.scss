@@ -8,7 +8,20 @@
 
 .site {
   &-name {
-    margin-top: 15px;
+    padding: 6px 0 0 62px;
+    min-height: 69px;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      width: 48px;
+      height: 69px;
+      background: no-repeat 0 0 url(../img/logo.png);
+      top:0;
+      left:0;
+    }
+
+    margin-top: 9px;
     @media(max-width: $screen-xs-max){
       margin-top: 40px;
     }
@@ -18,6 +31,9 @@
     text-decoration: none;
     &:hover{
       text-decoration: none;
+      &:before{
+        background-position: 0 -69px;
+      }
     }
     &-main {
       font-size: 30px;

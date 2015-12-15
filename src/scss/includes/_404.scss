@@ -3,13 +3,13 @@
     background:no-repeat 95% 0 url(../img/paper.png);
   }
   .dog{
-    width: 455px;
-    margin: 0 auto;
-    background: no-repeat 0 0 url(../img/dog.jpg);
+    max-width: 455px;
+    margin: 40px auto 0;
+    background: no-repeat 50% 0 url(../img/dog.jpg);
     &-close{
-      height: 533px;
+      height: 513px;
       opacity: 0;
-      background: no-repeat -455px 0 url(../img/dog.jpg);
+      background: no-repeat 50% -513px url(../img/dog.jpg);
       animation: dog-eye 4.2s infinite;
     }
   }
