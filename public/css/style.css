@@ -44,8 +44,8 @@
 @font-face {
   font-family: 'fontello';
   src: url("../fonts/fontello.woff") format("woff"), url("../fonts/fontello.ttf") format("truetype"), url("../fonts/fontello.svg?9607662#fontello") format("svg");
-  font-weight: 700;
-  font-style: italic; }
+  font-weight: normal;
+  font-style: normal; }
 
 [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "fontello";
